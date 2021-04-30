@@ -8,12 +8,13 @@ conn = sqlite3.connect('customer.db')
 # Create a cursor
 cursor = conn.cursor()
 
-# Create a table
-cursor.execute("""CREATE TABLE customers (
-                    first_name TEXT,
-                    last_name TEXT,
-                    email TEXT
-    )""")
+# if we recreate a table we get an error
+# # Create a table
+# cursor.execute("""CREATE TABLE customers (
+#                     first_name TEXT,
+#                     last_name TEXT,
+#                     email TEXT
+#     )""")
 
 # Datatypes:
 # NULL

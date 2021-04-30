@@ -8,7 +8,8 @@ conn = sqlite3.connect('customer.db')
 # Create a cursor
 cursor = conn.cursor()
 
-
+# Insert into database
+cursor.execute("INSERT INTO customers VALUES ('John', 'Elder', 'john@codemy.com')")
 
 # Commit our command
 conn.commit()
